@@ -1,5 +1,5 @@
 apiVersion: devops.alauda.io/v1alpha1
-kind: PipelineTaskTemplate
+kind: ClusterPipelineTaskTemplate
 metadata:
   name: alauda-all-in-one
   annotations:
@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: AllInOneTask
     alauda.io/readme.zh-CN: AllInOneTask
     alauda.io/readme.en: AllInOneTask
-    alauda.io/version: "1.8.11"
+    alauda.io/version: "2.6.1"
     alauda.io/style.icon: ""
   labels:
     category: CI
