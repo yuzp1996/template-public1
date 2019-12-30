@@ -1,5 +1,5 @@
 apiVersion: devops.alauda.io/v1alpha1
-kind: PipelineTemplate
+kind: ClusterPipelineTemplate
 metadata:
   name: AlaudaAllInOne
   namespace: default
@@ -8,7 +8,7 @@ metadata:
     alauda.io/displayName.en: "AlaudaAll-in-one"
     alauda.io/description.zh-CN: "Alauda ACP 2.X All-in-one"
     alauda.io/description.en: "Alauda ACP 2.X All-in-one"
-    alauda.io/version: "1.8.14"
+    alauda.io/version: "2.6.1"
     alauda.io/style.icon: golang,docker,sonarqube,kubernetes
   labels:
     category: Build
@@ -21,7 +21,7 @@ spec:
     - name: All
       tasks:
         - name: alauda-all-in-one
-          kind: PipelineTaskTemplate
+          kind: ClusterPipelineTaskTemplate
           type: public/alauda-all-in-one
   arguments:
     - displayName:
