@@ -1,5 +1,5 @@
 apiVersion: devops.alauda.io/v1alpha1
-kind: PipelineTaskTemplate
+kind: ClusterPipelineTaskTemplate
 metadata:
   name: alauda-nodejs
   annotations:
@@ -9,7 +9,7 @@ metadata:
     alauda.io/description.en: Build a NodeJs project
     alauda.io/readme.zh-CN: 构建NodeJs程序
     alauda.io/readme.en: Build a NodeJs project
-    alauda.io/version: "2.1.1"
+    alauda.io/version: "2.6.1"
     alauda.io/style.icon: ""
   labels:
     category: Nodejs
