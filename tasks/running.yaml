@@ -1,5 +1,5 @@
 apiVersion: devops.alauda.io/v1alpha1
-kind: PipelineTaskTemplate
+kind: ClusterPipelineTaskTemplate
 metadata:
   name: running
   annotations:
