@@ -1,5 +1,5 @@
 apiVersion: devops.alauda.io/v1alpha1
-kind: PipelineTemplate
+kind: ClusterPipelineTemplate
 metadata:
   name: AlaudaGoBuild
   namespace: default
@@ -8,7 +8,7 @@ metadata:
     alauda.io/displayName.en: "AlaudaGoBuild"
     alauda.io/description.zh-CN: "ACP 2.X AlaudaGoBuild"
     alauda.io/description.en: "ACP 2.X AlaudaGoBuild"
-    alauda.io/version: "2.1.3"
+    alauda.io/version: "2.6.1"
     alauda.io/style.icon: golang,docker,sonarqube,kubernetes
   labels:
     category: Build
@@ -21,17 +21,17 @@ spec:
     - name: Prepare
       tasks:
         - name: alauda-prepare
-          kind: PipelineTaskTemplate
+          kind: ClusterPipelineTaskTemplate
           type: public/alauda-prepare
     - name: Clone
       tasks:
         - name: alauda-clone
-          kind: PipelineTaskTemplate
+          kind: ClusterPipelineTaskTemplate
           type: public/alauda-clone
     - name: "Nodejs CI"
       tasks:
         - name: alauda-nodejs
-          kind: PipelineTaskTemplate
+          kind: ClusterPipelineTaskTemplate
           type: public/alauda-nodejs
   arguments:
     - displayName:
